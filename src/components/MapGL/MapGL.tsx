@@ -16,6 +16,8 @@ export const MapGL: React.FC = () => {
         key: API_KEY,
         center: [58, 20],
         zoom: 4,
+        scaleControl: 'topLeft',
+        floorControl: 'bottomLeft',
       });
 
       setMapInstance(map);
