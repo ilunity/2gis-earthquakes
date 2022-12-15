@@ -1,12 +1,14 @@
 {
-  "name": "tid-presentation",
+  "name": "2gis-earthquakes",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@2gis/mapgl": "^1.32.1",
